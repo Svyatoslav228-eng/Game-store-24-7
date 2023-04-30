@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="фото/free-icon-gas-station-3361166.png" type="image/png">
+    <title>AZS</title>
+    <style>
+    body{
+        background-size: 100%;
+        font-weight: bold;
+        font-size: larger;
+        background-image: url(фото/AZS.avif);
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 4%;
+    } 
+
+    #level{
+        border: 1px solid rgb(92, 6, 6);
+        border-radius: 10px;
+        padding: 10px 100px;
+        background-color: white;
+    }
+    #balance{
+        border: 1px solid rgb(48, 92, 6);
+        border-radius: 10px;
+        padding: 10px;
+        color:rgb(68, 131, 9);
+        background-color: white;
+    }
+    #AZS{
+        border: 1px solid black;
+        width: 175px;
+        height: 30px;
+        padding: 25px;
+        background-color: cornsilk;
+        color: crimson;
+        margin-left: 45%;
+    }
+    #out{
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id = 'AZS'>Ваша заправочка!</div>
+    </header>
+    <header>
+        <button id='out'>Выход с АЗС</button>
+        <div id = 'level'>level: </div>
+        <div id = 'balance'>Баланс </div>
+    </header>
+    <script defer src = "JS/balance.js"></script>
+    <script defer src = "JS/lvl.js"></script>
+    <script defer src = "JS/AZS_control.js"></script>
+</body>
+</html>

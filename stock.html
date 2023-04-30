@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src = "JS/stock.js"></script>
+    <link rel="shortcut icon" href="фото/icons8-склад-16.png" type="image/png">
+    <title>STOCK</title>
+    <style>
+    body{
+    background-size: 100%;
+    font-weight: bold;
+    font-size: larger;
+    background-image: url("фото/bg_stock.jpg");
+    }
+    header{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 4%;
+    } 
+    main{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 4%;
+    }
+    footer{
+    margin-left: 5%;
+    margin-right: 5%;
+    border:thick double #cec432;;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    }
+    #level{
+        border: 1px solid rgb(92, 6, 6);
+        border-radius: 10px;
+        padding: 10px 100px;
+    }
+    #balance{
+        border: 1px solid rgb(48, 92, 6);
+        border-radius: 10px;
+        padding: 10px;
+        color:rgb(68, 131, 9)
+    }
+    #funct{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-between;
+    }
+    #nums{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-between;
+    }
+    #marg{
+        margin-bottom: 20px;
+    }
+    #order_mat{
+        margin-top: 50px;
+        border: 1px solid rgb(92, 6, 6);
+        width: 30%;
+        height: 60px;
+        padding-top: 30px;
+        padding-left: 10%;
+    }
+    .buy{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        padding-top: 25px;
+        border: 4mm ridge rgba(241, 38, 20, 0.6);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <button id='out'>Выход со склада</button>
+        <div id = 'level'>level: </div>
+        <div id = 'balance'>Баланс </div>
+    </header>
+    <main>
+        <div id='no_yes'>Человек в ответе за маты: -</div>
+        
+    </main>
+    <footer>
+        <div id='funct'>
+        <div id='marg'>Цена(оставка + маты):</div>
+        <div>Количество:</div>
+        
+        </div>
+        <div id= 'num'>
+            <div id='marg'>100$</div>
+            <div id='materials'></div>
+        </div>
+        
+        <div id='order_mat'>Заказать маты +80 штук(приходут через 30 сек- 1 мин!)</div>
+    </footer>
+    
+    
+    <script defer src = "JS/balance.js"></script>
+    <script defer src = "JS/lvl.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="фото/free-icon-shop-4563694.png" type="image/png">
+    <title>YOUR OWN SHOP</title>
+    
+    <style>
+    body{
+     background-size: 100%;
+     font-weight: bold;
+     font-size: larger;
+     background-image: url(фото/bg_shop.jpg);
+    }
+    header{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 8%;
+    } 
+    #main{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 8%;
+    }
+    footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    }
+    #store{
+        padding: 20px;
+        color:rgb(255, 196, 0);
+        
+        background-color: white;
+    }
+
+    #stock{
+        margin-top: 150px;
+        padding: 30px;
+        color:rgb(68, 26, 26);
+        
+        background-color: white;
+    }
+    #level{
+        border: 1px solid rgb(92, 6, 6);
+        border-radius: 10px;
+        padding: 10px 100px;
+    }
+    #balance{
+        border: 1px solid rgb(48, 92, 6);
+        border-radius: 10px;
+        padding: 10px;
+        color:rgb(68, 131, 9)
+    }
+    #automat{
+        border: 1px solid rgb(6, 92, 85);
+        
+        padding: 120px 30px;
+        color:rgb(9, 131, 125);
+
+        background-image: url("фото/close.png") ;
+        background-attachment: fixed;
+        
+    }
+    #cash2{
+        border: 1px solid rgb(75, 6, 92);
+        
+        padding: 120px 100px;
+        color:rgb(117, 9, 131);
+        background-image: url("фото/close.png") ;
+        background-attachment: fixed;
+    }
+    #main_cash{
+        border: 1px solid rgb(6, 92, 6);
+        
+        padding: 120px 100px;
+        color:rgb(15, 202, 15);
+        background-color: white;
+    }
+    #cash1{
+        border: 1px solid rgb(7, 6, 92);
+        
+        padding: 120px 100px;
+        color:rgb(35, 9, 131);
+        background-image: url("фото/close.png") ;
+        background-attachment: fixed;
+    
+    }
+    #buyer{
+        padding: 10px;
+        border:rgb(9, 131, 125) 1px solid;
+        width: 250px;
+        height: 150px;
+        background-color: white;
+    }
+    #but{
+        margin: 10px;
+        padding: 20px;
+        color:rgb(88, 179, 14);
+        
+        background-color: white;
+    }
+    
+    #but2{
+        margin: 10px;
+        padding: 20px;
+        color:rgb(14, 179, 179);
+        
+        background-color: white;
+    }
+    #but3{
+        margin: 10px;
+        padding: 20px;
+        color:rgb(14, 179, 96);
+        
+        background-color: white;
+    }
+    #take_order{
+        margin-top: 20px;
+        margin-left: 50%;
+        padding: 20px;
+        color:rgb(179, 14, 39);
+        
+        background-color: white;
+    }
+    .buy{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        padding-top: 25px;
+        border: 4mm ridge rgba(241, 38, 20, 0.6);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <button id='store'>Магазин</button>
+        <div id = 'level'>level: </div>
+        <div id = 'balance'>Баланс </div>
+    </header>
+    <main id="main">
+        <div id = 'automat'>автомат</div>
+        
+        <div id = 'cash2'>касса</div>
+    </main>
+    <footer>
+        <div id = 'main_cash'>Наша касса</div>
+        <div id= 'cash1'>касса</div>
+        <button id='stock'>Склад</button>
+    </footer>
+    <footer>
+        
+        <button id='take_order'>Принять заказ работы</button>
+    </footer>
+    
+    <script defer src = "JS/main_code.js"></script>
+    <script defer src = "JS/balance.js"></script>
+    <script defer src = "JS/lvl.js"></script>
+    <script defer src = "JS/name.js"></script>
+    <script defer src = "JS/cash_register2.js"></script>
+    <script defer src = "JS/automat.js"></script>
+    <script defer src = "JS/cash_register1.js"></script>
+    <script defer src = "JS/AZS.js"></script>
+    <script defer src = "JS/Restorant.js"></script>
+</body>
+</html>
